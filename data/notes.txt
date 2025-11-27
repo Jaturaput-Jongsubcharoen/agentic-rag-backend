@@ -1,0 +1,10 @@
+Dataset Summary:
+This comprehensive dataset contains 9,660 high-resolution RGB images categorized for road infrastructure issues detection.
+The dataset focuses on identifying:
+• Potholes
+• Damaged roads
+• Broken road signs
+• Illegal parking violations
+• Environmental cleanliness issues
+
+The dataset supports computer vision and machine learning tasks for smart-city analytics and real-time road monitoring.
