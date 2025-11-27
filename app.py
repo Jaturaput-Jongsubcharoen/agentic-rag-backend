@@ -1,28 +1,28 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from dotenv import load_dotenv
-import os
 
-load_dotenv()
+from rag.chat import ChatRequest, ChatResponse, handle_chat
 
-app = FastAPI()
+app = FastAPI(title="Agentic RAG Backend")
 
-# Enable CORS (so React can call the API)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],      # lock down in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-@app.get("/")
-def root():
-    return {"message": "Agentic RAG backend is running!"}
 
-@app.post("/api/chat")
-def chat(payload: dict):
-    return {
-        "response": "Chat endpoint not implemented yet",
-        "received": payload
+@app.post("/api/chat", response_model=ChatResponse)
+async def chat_endpoint(  
+    request: ChatRequest):
+    """
+    POST /api/chat
+    {
+      "message": "...",
+      "history": [ { "role": "...", "content": "..." }, ... ]
     }
+    """
+    response = handle_chat(request)
+    return response
