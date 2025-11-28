@@ -1,6 +1,0 @@
-Smart City Use Cases:
-• Automated pothole detection for maintenance teams
-• Identifying dangerous road conditions
-• Detecting broken signs affecting traffic flow
-• Monitoring illegal parking patterns
-• Evaluating street cleanliness levels

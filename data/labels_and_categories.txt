@@ -1,8 +1,0 @@
-Label Categories:
-1. pothole
-2. damaged_road
-3. broken_sign
-4. illegal_parking
-5. garbage_or_cleanliness_issue
-
-Each image is assigned one category, enabling supervised learning for image classification or object detection tasks.

@@ -1,9 +1,22 @@
-fastapi
-uvicorn
-python-dotenv
-langchain
-langchain-community
-langchain-google-genai
-faiss-cpu
-chroma-hnswlib
-pydantic
+# Core
+Flask==3.1.0
+flask-cors==5.0.1
+
+# LangChain ecosystem
+langchain==0.2.16
+langchain-core==0.2.39
+langchain-community==0.2.9
+langchain-text-splitters==0.2.4
+
+# Gemini
+google-generativeai==0.5.4
+langchain-google-genai==1.0.5
+google-ai-generativelanguage==0.6.4
+
+# Vectorstore + embeddings
+faiss-cpu==1.7.4
+sentence-transformers==5.1.1
+pandas==2.3.2
+
+# Utility
+python-dotenv==1.2.0
