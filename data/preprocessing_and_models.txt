@@ -1,0 +1,11 @@
+Recommended Preprocessing:
+• Resize images to 224×224 or 256×256
+• Normalize pixel values (0–1)
+• Optional: CLAHE to enhance road texture visibility
+• Optional: Edge detection for road cracks
+
+Recommended Models:
+• CNNs (ResNet, EfficientNet, VGG16)
+• Vision Transformers (ViT-B/16)
+• Object Detection (YOLOv8, Faster R-CNN)
+• Segmentation for fine-grained detection
